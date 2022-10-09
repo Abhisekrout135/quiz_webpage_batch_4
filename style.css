@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.baground{
+    height: 100vh;
+    width: 100%;
+   background:linear-gradient(black,orange,rgba(240, 236, 236, 0.274)),url(./image5.jpg);
+   
+    background-size:cover ;
+    background-position: center;
+
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    
+    position: fixed;
+    animation: animate .10s linear infinite;
+    background-image: linear-gradient(green,red,yellow);
+   /* box-shadow:   20px 20px white ;
+
+   box-shadow:
+    */
+    
+}
+@keyframes animate{
+    from {
+transform: rotate(0deg) ;
+    }
+    to{
+        transform: rotate(360deg) ;
+    }
+}
+h1{
+    margin-left: 120px;
+   padding-top: 35px;
+    
+  
+}nav{
+    display: inline;
+    
+   margin-left: 300px;
+   
+
+   
+  
+}
+nav a{
+    
+    color: white;
+    font-weight: bold;
+    margin-left: 50px;
+     text-decoration: none;
+     padding: 100px;
+     background-image: linear-gradient(orange,white);
+     padding-top: 20px;
+     padding-bottom: 20px;
+     border-radius: 50px ;
+     
+} 
+
+
+ nav a:hover{
+     
+     cursor: pointer;
+     
+     
+     padding-top: 20px;
+     padding-bottom: 20px;
+
+     border-radius: 50px ;
+     color: black;
+     background-image: linear-gradient(orange,white);
+     box-shadow: 5px 5px 5px 5px white;
+}
+
+
+
+
+
+.TEXT-BOX{
+    padding-top: 65px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.row{
+    margin-left: 10%;
+    padding-top: 35px;
+}
+.TEXT-BOX h1{
+    font-size: 140px;
+    line-height: 140px;
+}
+.row span{
+    font-size: 35px;
+    line-height: 40px;
+}
+.container text-center{
+    padding-top: 400px;
+    color: cornsilk;
+}
+.contact{
+    padding: 20px;
+    margin: 20px;
+    border-top:  black;
+    
+}
+.col-md-4{
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+}
+
+.col-md-6{
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+   
+}
+.col-md-3{
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+}
+.col-12{
+
+ font-weight: bold;
+    padding: 10px;
+    color: white;
+}
+p{
+    padding-top: 15px;
+}
+.FOOTER{
+   margin-left: 600px;
+   
+}
+.FOOTER h1{
+    font-size: 80px;
+    line-height: 20px;
+  
+  
+}
+
+

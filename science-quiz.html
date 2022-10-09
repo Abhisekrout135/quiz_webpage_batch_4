@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>science quiz</title>
+        <style>
+            body{
+                background-color: antiquewhite;
+            }
+            form{
+                margin: 20px;
+                padding: 20px;
+                border: 8px  solid black;
+
+            }
+            /* form input type button :hover{
+                background-color: black;
+                color: salmon;                            ///not working.......
+                border: 3px solid white;
+                box-shadow: 10px 10px 10px 10px white;
+
+            } */
+        </style>
+    </head>
+    <script>
+        alert("welcome to science-quiz page.")
+    function check() {
+    var c=0;
+    var q1=document.quiz.question1.value;
+    var q2=document.quiz.question2.value;
+    var q3=document.quiz.question3.value;
+    var q4=document.quiz.question4.value;
+    var q5=document.quiz.question5.value;
+    if (q1=="selector"){
+    c++;
+}
+if (q2=="style"){
+    c++;                              //this part also not working ......
+}
+if (q3=="body {color: black}"){
+    c++;
+}
+if (q4=="Property-Name"){
+    c++;
+}
+if (q5=="margin-left"){
+    c++;
+}
+    document.write( "your score is:" +c);
+    }
+    </script>
+    <body>
+        <form name="quiz" id="quiz">
+       
+           <div>
+           <p>1.  Brass gets discoloured in air because of the presence of which of the following gases in air?
+
+            </p>
+           <p><input type="radio"name="question1" value="Oxygen">A. Oxygen</p>
+           <p><input type="radio"name="question1" value=" Hydrogen ">B.  Hydrogen </p>
+           <p><input type="radio"name="question1" value="Carbon dioxide
+            ">C. Carbon dioxide
+        </p>
+           <p><input type="radio"name="question1" value="Nitrogen">D. Nitrogen</p>
+           </div>
+           <div>
+           <p>2.  Which of the following is a non metal that remains liquid at room temperature?
+
+            </p>
+           <p><input type="radio"name="question2"value="Phosphorous">A. Phosphorous</p>
+           <p><input type="radio"name="question2"value=" Bromineyle">B.  Bromine</p>
+           <p><input type="radio"name="question2"value="Chlorine">C. Chlorine</p>
+           <p><input type="radio"name="question2"value="Helium">D. Helium</p>
+           </div>
+           <div>
+           <p>3.Chlorophyll is a naturally occurring chelate compound in which central metal is?
+
+        </p>
+           <P><input type="radio"name="question3"value="copper
+
+            ">A. copper
+
+        </P>
+           <P><input type="radio"name="question3"value="magnesium
+
+            ">B. magnesium
+
+        </P>
+           <P><input type="radio"name="question3"value="iron">C.iron</P>
+           <P><input type="radio"name="question3"value="calcium">D. calcium</P>
+           </div>
+           <div>
+           <p>4.Which of the following is used in pencils?</p>
+           <P><input type="radio"name="question4"value="Graphite">A. Graphite</P>
+           <P><input type="radio"name="question4"value="iron">B. iron</P>
+           <P><input type="radio"name="question4"value="Rule">C. Rule</P>
+           <P><input type="radio"name="question4"value="calcium">D. calcium</P>
+        </div>
+        <div>
+           <p>5. Which of the following metals forms an amalgam with other metals?</p>
+           <P><input type="radio"name="question5"value="Tin:">A.Tin</P>
+           <P><input type="radio"name="question5"value=" Lead">B.  Lead</P>
+           <P><input type="radio"name="question5"value="Mercury:">C.Mercury</P>
+           <P><input type="radio"name="question5"value="Zinc">D. Zinc</P>
+        </div>
+
+       <input type="button"name=""value="submit" onclick="check()" style="background-color: salmon;  height: 50px;width: 120px; border: 3px solid black;">
+    </form>
+    </body>
+</html>

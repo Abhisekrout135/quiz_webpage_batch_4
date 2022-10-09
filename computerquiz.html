@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>computer quiz</title>
+        <style>
+            body{
+                background-color: antiquewhite;
+            }
+            form{
+                margin: 20px;
+                padding: 20px;
+                border: 8px  solid black;
+
+            }
+            /* form input type button :hover{
+                background-color: black;
+                color: salmon;                            ///not working.......
+                border: 3px solid white;
+                box-shadow: 10px 10px 10px 10px white;
+
+            } */
+        </style>
+    </head>
+    <script>
+        alert("welcome to computer-quiz page.")
+    function check() {
+    var c=0;
+    var q1=document.quiz.question1.value;
+    var q2=document.quiz.question2.value;
+    var q3=document.quiz.question3.value;
+    var q4=document.quiz.question4.value;
+    var q5=document.quiz.question5.value;
+    if (q1=="selector"){
+    c++;
+}
+if (q2=="style"){
+    c++;                              //this part also not working ......
+}
+if (q3=="body {color: black}"){
+    c++;
+}
+if (q4=="Property-Name"){
+    c++;
+}
+if (q5=="margin-left"){
+    c++;
+}
+    document.write( "your score is:" +c);
+    }
+    </script>
+    <body>
+        <form name="quiz" id="quiz">
+       
+           <div>
+           <p>1.  In CSS, h1 can be called as?</p>
+           <p><input type="radio"name="question1" value="selector">A. selector</p>
+           <p><input type="radio"name="question1" value=" Value">B.  Value</p>
+           <p><input type="radio"name="question1" value="Attribute">C. Attribute</p>
+           <p><input type="radio"name="question1" value="Tag">D. Tag</p>
+           </div>
+           <div>
+           <p>2.  Which HTML tag is used to define an internal style sheet?</p>
+           <p><input type="radio"name="question2"value="head">A. head</p>
+           <p><input type="radio"name="question2"value=" style">B.  style</p>
+           <p><input type="radio"name="question2"value="body">C. body</p>
+           <p><input type="radio"name="question2"value="p">D. p</p>
+           </div>
+           <div>
+           <p>3.Which is the correct CSS syntax ?</p>
+           <P><input type="radio"name="question3"value="body {color: black}
+
+            ">A. body {color: black}
+
+        </P>
+           <P><input type="radio"name="question3"value="{body;color:black}
+
+            ">B. {body;color:black}
+
+        </P>
+           <P><input type="radio"name="question3"value="bg color">C. bg color</P>
+           <P><input type="radio"name="question3"value="baground">D. baground</P>
+           </div>
+           <div>
+           <p>4.In CSS, “font-size” can be called as ?</p>
+           <P><input type="radio"name="question4"value="Selector">A. Selector</P>
+           <P><input type="radio"name="question4"value="Property-Name">B. Property-Name</P>
+           <P><input type="radio"name="question4"value="Rule">C. Rule</P>
+           <P><input type="radio"name="question4"value="Property">D. Property</P>
+        </div>
+        <div>
+           <p>5. How do you change the left margin of an element?</p>
+           <P><input type="radio"name="question5"value="left-margin:">A. left-margin:</P>
+           <P><input type="radio"name="question5"value=" text-indent">B.  text-indent</P>
+           <P><input type="radio"name="question5"value="margin-left:">C. margin-left:</P>
+           <P><input type="radio"name="question5"value="margin">D. margin</P>
+        </div>
+
+       <input type="button"name=""value="submit" onclick="check()" style="background-color: salmon;  height: 50px;width: 120px; border: 3px solid black;">
+    </form>
+    </body>
+</html>

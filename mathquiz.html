@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>math quiz</title>
+        <style>
+            body{
+                background-color: salmon;
+            }
+            form{
+                margin: 20px;
+                padding: 20px;
+                border: 8px  solid black;
+
+            }
+            /* form input type button :hover{
+                background-color: black;
+                color: salmon;                            ///not working.......
+                border: 3px solid white;
+                box-shadow: 10px 10px 10px 10px white;
+
+            } */
+        </style>
+    </head>
+    <script>
+        alert("welcome to math-quiz page")
+    function check() {
+    var c=0;
+    var q1=document.quiz.question1.value;
+    var q2=document.quiz.question2.value;
+    var q3=document.quiz.question3.value;
+    var q4=document.quiz.question4.value;
+    var q5=document.quiz.question5.value;
+    if (q1=="11"){
+    c++;
+}
+if (q2=="30, 48"){
+    c++;                              //this part also not working ......
+}
+if (q3=="11"){
+    c++;
+}
+if (q4=="8"){
+    c++;
+}
+if (q5=="3"){
+    c++;
+}
+    document.write( "your score is:" +c);
+    }
+    </script>
+    <body>
+        <form name="quiz" id="quiz">
+       
+           <div>
+           <p>1. 121 Divided by 11 is</p>
+           <p><input type="radio"name="question1" value="11">A. 11</p>
+           <p><input type="radio"name="question1" value="13">B. 13</p>
+           <p><input type="radio"name="question1" value="15">C. 15</p>
+           <p><input type="radio"name="question1" value="18">D. 18</p>
+           </div>
+           <div>
+           <p>2. Find the Missing Term in Multiples of 6 : 6, 12, 18, 24, _, 36, 42, _ 54, 60.</p>
+           <p><input type="radio"name="question2"value="32, 45">A. 32, 45</p>
+           <p><input type="radio"name="question2"value="30, 48">B. 30, 48</p>
+           <p><input type="radio"name="question2"value="24, 40">C. 24, 40</p>
+           <p><input type="radio"name="question2"value="25, 49">D. 25, 49</p>
+           </div>
+           <div>
+           <p>3. What is the Next Prime Number after 7 ?</p>
+           <P><input type="radio"name="question3"value="11">A. 11</P>
+           <P><input type="radio"name="question3"value="12">B. 12</P>
+           <P><input type="radio"name="question3"value="13">C. 13</P>
+           <P><input type="radio"name="question3"value="14">D. 14</P>
+           </div>
+           <div>
+           <p>4. What is the Next  Number after 7 ?</p>
+           <P><input type="radio"name="question4"value="11">A. 11</P>
+           <P><input type="radio"name="question4"value="8">B. 8</P>
+           <P><input type="radio"name="question4"value="9">C. 9</P>
+           <P><input type="radio"name="question4"value="14">D. 14</P>
+        </div>
+        <div>
+           <p>5. What is the addition of 1+2?</p>
+           <P><input type="radio"name="question5"value="11">A. 11</P>
+           <P><input type="radio"name="question5"value="8">B. 8</P>
+           <P><input type="radio"name="question5"value="3">C. 3</P>
+           <P><input type="radio"name="question5"value="14">D. 14</P>
+        </div>
+
+       <input type="button"name=""value="submit" onclick="check()" style="background-color: salmon;  height: 50px;width: 120px; border: 3px solid black;">
+    </form>
+    </body>
+</html>
